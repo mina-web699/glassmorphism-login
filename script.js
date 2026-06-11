@@ -83,6 +83,9 @@ form.onreset = function() {
             }, 300); 
         });
 
-
+let newP = document.querySelector(".log");
+newP.addEventListener("click", function(){
+    location.herf = "https://google.com"
+})
 
 
